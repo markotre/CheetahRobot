@@ -23,6 +23,7 @@
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
+#include "moves.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -53,12 +54,11 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-uint16_t SERVO1 = 1400;
-void push_ups(void);
+
 uint16_t recived = 'x';
 void process_serial_data(uint8_t ch);
-void stand_up(void);
-void check(void);
+
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -129,21 +129,15 @@ int main(void)
 
 
 
-	LL_TIM_OC_SetCompareCH1(TIM2, SERVO1);
-	LL_TIM_OC_SetCompareCH2(TIM2, SERVO1);
-	LL_TIM_OC_SetCompareCH3(TIM2, SERVO1);
-	LL_TIM_OC_SetCompareCH4(TIM2, SERVO1);
-	LL_TIM_OC_SetCompareCH1(TIM3, SERVO1);
-	LL_TIM_OC_SetCompareCH2(TIM3, SERVO1);
-	LL_TIM_OC_SetCompareCH3(TIM3, SERVO1);
-	LL_TIM_OC_SetCompareCH4(TIM3, SERVO1);
-	LL_mDelay(5000);
+  stand_up();
 
 
 
   while (1)
   {
     /* USER CODE END WHILE */
+
+
 	  if (recived=='m'){
 		  push_ups();
 	  }
@@ -220,66 +214,11 @@ void process_serial_data(uint8_t ch)
 		}
 }
 
-void push_ups(){
-  	LL_TIM_OC_SetCompareCH1(TIM3, 800);
-  	LL_TIM_OC_SetCompareCH4(TIM3, 2000);
-  	LL_TIM_OC_SetCompareCH2(TIM3, 800);
-  	LL_TIM_OC_SetCompareCH2(TIM2, 2000);
-  	LL_TIM_OC_SetCompareCH3(TIM2, 800);
-  	LL_TIM_OC_SetCompareCH3(TIM3, 2000);
-  	LL_TIM_OC_SetCompareCH4(TIM2, 800);
-  	LL_TIM_OC_SetCompareCH1(TIM2, 2000);
-
-	LL_mDelay(1000);
-
-	LL_TIM_OC_SetCompareCH1(TIM3, SERVO1);
-	LL_TIM_OC_SetCompareCH4(TIM3, SERVO1);
-  	LL_TIM_OC_SetCompareCH2(TIM3, SERVO1);
-  	LL_TIM_OC_SetCompareCH2(TIM2, SERVO1);
-  	LL_TIM_OC_SetCompareCH3(TIM2, SERVO1);
-  	LL_TIM_OC_SetCompareCH3(TIM3, SERVO1);
-  	LL_TIM_OC_SetCompareCH4(TIM2, SERVO1);
-  	LL_TIM_OC_SetCompareCH1(TIM2, SERVO1);
-	LL_mDelay(1000);
 
 
-}
-
-void stand_up(){
-  	LL_TIM_OC_SetCompareCH1(TIM3, 800);
-  	LL_TIM_OC_SetCompareCH4(TIM3, 2000);
-  	LL_TIM_OC_SetCompareCH2(TIM3, 800);
-  	LL_TIM_OC_SetCompareCH2(TIM2, 2000);
-  	LL_TIM_OC_SetCompareCH3(TIM2, 800);
-  	LL_TIM_OC_SetCompareCH3(TIM3, 2000);
-  	LL_TIM_OC_SetCompareCH4(TIM2, 800);
-  	LL_TIM_OC_SetCompareCH1(TIM2, 2000);
-	LL_mDelay(1000);
-
-}
-
-void check(){
-
-	stand_up();
-	LL_TIM_OC_SetCompareCH1(TIM3, SERVO1);
-	LL_TIM_OC_SetCompareCH4(TIM3, SERVO1);
-	LL_mDelay(1000);
-	stand_up();
-  	LL_TIM_OC_SetCompareCH2(TIM3, SERVO1);
-  	LL_TIM_OC_SetCompareCH2(TIM2, SERVO1);
-  	LL_mDelay(1000);
-  	stand_up();
-  	LL_TIM_OC_SetCompareCH3(TIM2, SERVO1);
-  	LL_TIM_OC_SetCompareCH3(TIM3, SERVO1);
-  	LL_mDelay(1000);
-  	stand_up();
-  	LL_TIM_OC_SetCompareCH4(TIM2, SERVO1);
-  	LL_TIM_OC_SetCompareCH1(TIM2, SERVO1);
-  	LL_mDelay(1000);
-  	stand_up();
 
 
-}
+
 /* USER CODE END 4 */
 
 /**

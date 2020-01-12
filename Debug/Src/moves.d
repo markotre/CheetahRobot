@@ -1,4 +1,4 @@
-Src/main.o: ../Src/main.c ../Inc/main.h \
+Src/moves.o: ../Src/moves.c ../Inc/moves.h ../Inc/main.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_rcc.h \
  ../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303x8.h \
@@ -17,8 +17,9 @@ Src/main.o: ../Src/main.c ../Inc/main.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_dma.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_tim.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_usart.h \
- ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_gpio.h ../Inc/tim.h \
- ../Inc/main.h ../Inc/usart.h ../Inc/gpio.h ../Inc/moves.h
+ ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_gpio.h
+
+../Inc/moves.h:
 
 ../Inc/main.h:
 
@@ -59,13 +60,3 @@ Src/main.o: ../Src/main.c ../Inc/main.h \
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_usart.h:
 
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_gpio.h:
-
-../Inc/tim.h:
-
-../Inc/main.h:
-
-../Inc/usart.h:
-
-../Inc/gpio.h:
-
-../Inc/moves.h:
