@@ -4,4 +4,11 @@ stm32f3xx_ll_tim.h:2639:22:LL_TIM_OC_SetCompareCH3	16	static
 stm32f3xx_ll_tim.h:2656:22:LL_TIM_OC_SetCompareCH4	16	static
 moves.c:5:6:stand_up	8	static
 moves.c:22:6:push_ups	8	static
-moves.c:37:6:check	8	static
+moves.c:38:6:check	8	static
+moves.c:60:6:sit	8	static
+moves.c:73:6:lay	8	static
+moves.c:87:6:hello	8	static
+moves.c:97:6:sit_inv	8	static
+moves.c:111:6:walk	8	static
+moves.c:171:6:back_walk	8	static
+moves.c:187:6:sleep	8	static

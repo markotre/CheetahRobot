@@ -53,9 +53,11 @@
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+void state(uint8_t);
 /* USER CODE BEGIN PFP */
 
-uint16_t recived = 'x';
+uint8_t recived = 'x';
+uint8_t prev_recived='x';
 void process_serial_data(uint8_t ch);
 
 
@@ -140,13 +142,68 @@ int main(void)
 
 	  if (recived=='m'){
 		  push_ups();
+		  state('m');
+
 	  }
 	  else if (recived=='b') {
 		  stand_up();
+		  state('b');
+
 	  }
 	  else if (recived=='h') {
-	  		  check();
+	  		check();
+	  		state('h');
+
 	  	  }
+	  else if (recived=='i') {
+		  if(prev_recived != recived){
+			  stand_up();
+		  }
+	  		sit();
+	  		state('i');
+
+	  	  }
+	  else if (recived=='k') {
+	  		lay();
+	  		state('k');
+
+	  	  }
+	  else if (recived=='g') {
+		  if(prev_recived != recived){
+		  			stand_up();
+		  			sit();
+		  			LL_mDelay(1000);
+		  }
+
+	  		hello();
+	  		state('g');
+
+	  	  }
+	  else if (recived=='j') {
+		  if(prev_recived != recived){
+			  stand_up();
+		  }
+	  		sit_inv();
+	  		state('j');
+
+	  	  }
+	  else if (recived=='e') {
+		  if(prev_recived != recived){
+			  stand_up();
+		  }
+	  		walk();
+	  		state('e');
+
+	  	  }
+	  else if (recived=='l') {
+		  if(prev_recived != recived){
+			  lay();
+		  }
+	  		sleep();
+	  		state('l');
+
+	  	  }
+
 
     /* USER CODE BEGIN 3 */
   }
@@ -212,8 +269,53 @@ void process_serial_data(uint8_t ch)
 			recived = ch;
 
 		}
+	else if(ch == 'i')
+		{
+			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
+			recived = ch;
+
+
+		}
+	else if(ch == 'k')
+		{
+			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
+			recived = ch;
+
+		}
+	else if(ch == 'g')
+		{
+			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
+			recived = ch;
+
+
+		}
+	else if(ch == 'j')
+		{
+			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
+			recived = ch;
+
+		}
+	else if(ch == 'e')
+		{
+			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
+			recived = ch;
+
+		}
+	else if(ch == 'l')
+		{
+			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
+			recived = ch;
+
+		}
+
 }
 
+
+void state(uint8_t s){
+	if(recived==s){
+		prev_recived=s;
+	}
+}
 
 
 

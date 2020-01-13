@@ -18,6 +18,13 @@
  void stand_up(void);
  void push_ups(void);
  void check(void);
+ void sit(void);
+ void sit_inv(void);
+ void lay(void);
+ void hello(void);
+ void walk(void);
+ void sleep(void);
+
 /* USER CODE BEGIN Prototypes */
 
 /* USER CODE END Prototypes */
