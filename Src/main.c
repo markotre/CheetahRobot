@@ -139,7 +139,6 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
-
 	  if (recived=='m'){
 		  push_ups();
 		  state('m');
@@ -203,6 +202,23 @@ int main(void)
 	  		state('l');
 
 	  	  }
+	  else if (recived=='f') {
+		  if(prev_recived != recived){
+			  stand_up();
+		  }
+		  	  back_walk();
+		  	  state('f');
+
+	  	  }
+	  else if (recived=='d') {
+		  if(prev_recived != recived){
+			  stand_up();
+		  }
+		  	  right_walk();
+		  	  state('d');
+
+	  	  }
+
 
 
     /* USER CODE BEGIN 3 */
@@ -251,10 +267,14 @@ void process_serial_data(uint8_t ch)
 {
 	//static uint8_t count = 0;
 
-	if(ch == 'm')
+	if(ch>=97 && ch<=122){
+		recived = ch;
+	}
+
+	/*if(ch == 'm')
 	{
 		//LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_3);
-		recived = ch;
+
 
 	}
 	else if(ch == 'b')
@@ -306,7 +326,7 @@ void process_serial_data(uint8_t ch)
 			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
 			recived = ch;
 
-		}
+		}*/
 
 }
 
