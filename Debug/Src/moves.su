@@ -10,6 +10,6 @@ moves.c:73:6:lay	8	static
 moves.c:87:6:hello	8	static
 moves.c:97:6:sit_inv	8	static
 moves.c:111:6:walk	8	static
-moves.c:168:6:back_walk	8	static
-moves.c:223:6:right_walk	8	static
-moves.c:296:6:sleep	8	static
+moves.c:166:6:back_walk	8	static
+moves.c:221:6:right_walk	8	static
+moves.c:275:6:sleep	8	static
