@@ -137,6 +137,7 @@ int main(void)
 
   while (1)
   {
+	  walk2();
     /* USER CODE END WHILE */
 
 	  if (recived=='m'){
@@ -216,6 +217,14 @@ int main(void)
 		  }
 		  	  right_walk();
 		  	  state('d');
+
+	  	  }
+	  else if (recived=='c') {
+		  if(prev_recived != recived){
+			  stand_up();
+		  }
+		  	 left_walk();
+		  	 state('c');
 
 	  	  }
 

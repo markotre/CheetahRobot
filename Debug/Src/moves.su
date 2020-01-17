@@ -12,4 +12,7 @@ moves.c:97:6:sit_inv	8	static
 moves.c:111:6:walk	8	static
 moves.c:166:6:back_walk	8	static
 moves.c:221:6:right_walk	8	static
-moves.c:275:6:sleep	8	static
+moves.c:276:6:left_walk	8	static
+moves.c:323:6:walk2	8	static
+moves.c:379:6:test	8	static
+moves.c:442:6:sleep	8	static
