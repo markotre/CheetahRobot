@@ -137,7 +137,7 @@ int main(void)
 
   while (1)
   {
-	  walk2();
+
     /* USER CODE END WHILE */
 
 	  if (recived=='m'){
@@ -156,9 +156,6 @@ int main(void)
 
 	  	  }
 	  else if (recived=='i') {
-		  if(prev_recived != recived){
-			  stand_up();
-		  }
 	  		sit();
 	  		state('i');
 
@@ -170,10 +167,9 @@ int main(void)
 	  	  }
 	  else if (recived=='g') {
 		  if(prev_recived != recived){
-		  			stand_up();
-		  			sit();
-		  			LL_mDelay(1000);
+			  sit();
 		  }
+
 
 	  		hello();
 	  		state('g');
