@@ -138,6 +138,7 @@ int main(void)
   while (1)
   {
 
+
     /* USER CODE END WHILE */
 
 	  if (recived=='m'){
@@ -224,6 +225,15 @@ int main(void)
 
 	  	  }
 
+	  else if (recived=='a') {
+		  if(prev_recived != recived){
+			  stand_up();
+		  }
+		  	 dance();
+		  	 state('a');
+
+	  	  }
+
 
 
     /* USER CODE BEGIN 3 */
@@ -270,68 +280,11 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void process_serial_data(uint8_t ch)
 {
-	//static uint8_t count = 0;
 
 	if(ch>=97 && ch<=122){
 		recived = ch;
 	}
 
-	/*if(ch == 'm')
-	{
-		//LL_GPIO_SetOutputPin(GPIOB, LL_GPIO_PIN_3);
-
-
-	}
-	else if(ch == 'b')
-	{
-		//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
-		recived = ch;
-
-	}
-	else if(ch == 'h')
-		{
-			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
-			recived = ch;
-
-		}
-	else if(ch == 'i')
-		{
-			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
-			recived = ch;
-
-
-		}
-	else if(ch == 'k')
-		{
-			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
-			recived = ch;
-
-		}
-	else if(ch == 'g')
-		{
-			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
-			recived = ch;
-
-
-		}
-	else if(ch == 'j')
-		{
-			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
-			recived = ch;
-
-		}
-	else if(ch == 'e')
-		{
-			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
-			recived = ch;
-
-		}
-	else if(ch == 'l')
-		{
-			//LL_GPIO_ResetOutputPin(GPIOB, LL_GPIO_PIN_3);
-			recived = ch;
-
-		}*/
 
 }
 

@@ -1,20 +1,35 @@
 #include "moves.h"
 
+
  uint16_t SERVO1 = 1400;
+
+ uint16_t SERVOMIN = 700;
+ uint16_t SERVOMAX = 2100;
+ uint16_t STEP = 100;
+ uint16_t STEP2 = 100;
+ uint16_t STEP11 = 100;
+ uint16_t STEP22 = 100;
+ uint16_t SERVOM = 700;
+ uint16_t SERVOV = 2100;
+ uint16_t SERVOM2 = 700;
+ uint16_t SERVOV2 = 2100;
+ uint8_t start_fulldance=0;
+ uint8_t count=0;
+extern uint8_t recived;
 
 void stand_up(){
 	//PZ
   	LL_TIM_OC_SetCompareCH1(TIM3, 750);
-  	LL_TIM_OC_SetCompareCH4(TIM3, 2040);
+  	LL_TIM_OC_SetCompareCH4(TIM3, 2040); //2040
   	//PP
-  	LL_TIM_OC_SetCompareCH2(TIM3, 850);
-  	LL_TIM_OC_SetCompareCH2(TIM2, 2150);
+  	LL_TIM_OC_SetCompareCH2(TIM3, 850);  //850
+  	LL_TIM_OC_SetCompareCH2(TIM2, 2150); //2150
   	//LZ
   	LL_TIM_OC_SetCompareCH3(TIM2, 750); //FS
-  	LL_TIM_OC_SetCompareCH3(TIM3, 2200);
+  	LL_TIM_OC_SetCompareCH3(TIM3, 2200); //2200
   	//LP
-  	LL_TIM_OC_SetCompareCH4(TIM2, 700);
-  	LL_TIM_OC_SetCompareCH1(TIM2, 2050);
+  	LL_TIM_OC_SetCompareCH4(TIM2, 700); //700
+  	LL_TIM_OC_SetCompareCH1(TIM2, 2050); //2050
 	LL_mDelay(500);
 
 }
@@ -463,6 +478,97 @@ void sleep(){
   	//LP
   	LL_TIM_OC_SetCompareCH4(TIM2, 2050);
   	LL_TIM_OC_SetCompareCH1(TIM2, 700);
+
+
+}
+void dance(){
+	start_fulldance=0;
+	SERVOM = 700;
+	SERVOV = 2100;
+	SERVOM2 = 700;
+	SERVOV2 = 2100;
+	count=0;
+
+
+	while(recived =='a' && count<4){
+
+
+		if(start_fulldance){
+			//PZ
+		  	LL_TIM_OC_SetCompareCH1(TIM3, SERVOM2);
+		  	LL_TIM_OC_SetCompareCH4(TIM3, SERVOV2); //2040
+		  	//LZ
+		  	LL_TIM_OC_SetCompareCH3(TIM2, SERVOM2); //FS
+		  	LL_TIM_OC_SetCompareCH3(TIM3, SERVOV2);
+
+			if(SERVOM2==SERVOMIN){
+				STEP11=50;
+
+			}
+			else if(SERVOM2==SERVO1){
+				STEP11=-50;
+
+
+			}
+			if(SERVOV2==SERVO1){
+				STEP22=50;
+
+			}
+			else if(SERVOV2==SERVOMAX){
+				STEP22=-50;
+			}
+			SERVOV2+= STEP22;
+			SERVOM2+= STEP11;
+
+		}
+
+
+
+	  	LL_TIM_OC_SetCompareCH2(TIM3, SERVOM);  //850
+	  	LL_TIM_OC_SetCompareCH2(TIM2, SERVOV); //2150
+	  	LL_TIM_OC_SetCompareCH4(TIM2, SERVOM); //700
+	  	LL_TIM_OC_SetCompareCH1(TIM2, SERVOV); //2050
+		LL_mDelay(100);
+		if(SERVOM==SERVOMIN){
+			STEP=50;
+
+
+		}
+		else if(SERVOM==SERVO1){
+			STEP=-50;
+			start_fulldance=1;
+			count+=1;
+		}
+		if(SERVOV==SERVO1){
+			STEP2=50;
+
+		}
+		else if(SERVOV==SERVOMAX){
+			STEP2=-50;
+		}
+		SERVOV+= STEP2;
+		SERVOM+= STEP;
+
+
+	}
+	count=0;
+
+	while(recived =='a' && count<5){
+
+		stand_up();
+		//PZ
+	  	LL_TIM_OC_SetCompareCH1(TIM3, 1100);
+	  	LL_TIM_OC_SetCompareCH4(TIM3, 1700); //2040
+	  	//LZ
+	  	LL_TIM_OC_SetCompareCH3(TIM2, 1100); //FS
+	  	LL_TIM_OC_SetCompareCH3(TIM3, 1750);
+	  	LL_mDelay(500);
+	  	count++;
+
+	}
+
+
+
 
 
 }
