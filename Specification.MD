@@ -9,6 +9,12 @@ tlačiareň. Nohy robota a držiaky na servo pohony vytlačíme podľa predlohy 
 pulzno-šírkovou moduláciu (PWM).
 
 ## Potrebné komponenty
+* Mikropočítač STM32F303K8T6
+* 8 micro servo pohonov
+
+* HC-06 bluetooth module
+* Napájacie batérie
+* Vytlačené časti konštrukcie robota
 ## Bloková schéma zapojenia
 ## Ciele projektu
 ## Literatúra
