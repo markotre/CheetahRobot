@@ -23,9 +23,10 @@ pulzno-šírkovou moduláciu (PWM).
 ## Ciele projektu
 * Zostrojiť robota podľa predlohy
 
-![Predloha robota](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Pictures/robot.jpg"Predloha robota")
+![Predloha robota](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Pictures/robot.jpg "Predloha robota")
 
 * Vytvoriť mobilnú aplikáciu na ovládanie robota
 ## Literatúra
 https://www.instructables.com/id/Baby-MIT-Cheetah-Robot/
+
 https://www.towerpro.com.tw/product/mg90s-3/
