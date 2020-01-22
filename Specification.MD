@@ -18,5 +18,14 @@ pulzno-šírkovou moduláciu (PWM).
 * Napájacie batérie
 * Vytlačené časti konštrukcie robota
 ## Bloková schéma zapojenia
+![Blokova schema zapojenia ](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Block_diagram.png "Blokova schema zapojenia")
+
 ## Ciele projektu
+* Zostrojiť robota podľa predlohy
+
+![Predloha robota](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/robot.jpg "Predloha robota")
+
+* Vytvoriť mobilnú aplikáciu na ovládanie robota
 ## Literatúra
+https://www.instructables.com/id/Baby-MIT-Cheetah-Robot/
+https://www.towerpro.com.tw/product/mg90s-3/
