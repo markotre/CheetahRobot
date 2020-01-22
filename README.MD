@@ -22,7 +22,7 @@ Podvozok robota pozostáva z držiakov na servo pohony vytlačené na 3D tlačia
 
 Na podvozku sa nachádza prototypová doska. Riadiacou jednotkou robota je kit STM32F303K8, ktorý je osadený v prototypovacej doske na konštrukcii robota. Spolu s kitom je na doske osadené uloženie pre Bluetooth modul HC-06. Ďalej sa na doske nachádzajú 2 konektory (5,5/2,1 mm) slúžiace na napájanie kitu STM32 (9V) a rovnaký konektor pre napájanie motorov (4-6V). Poslednou súčasťou dosku sú piny pre pripojenie servo motorov.
 
-![Proto_doska](https://github.com/markotre/CheetahRobot/blob/develop/Pictures/20200119_200212.jpg "Prototypova doska")
+![Proto_doska](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Pictures/protodoska.jpg "Prototypova doska")
 
 ### Potrebné komponenty
 * Mikropočítač STM32F303K8T6
