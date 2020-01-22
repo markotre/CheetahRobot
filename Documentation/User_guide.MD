@@ -1,46 +1,23 @@
 # Používateľská príručka
 
 ## Návod na obsluhu robota 
-1. Zapneme robota pomocou vypínačov na spodnej strane robota
+1. Zapneme robota pomocou vypínačov na spodnej strane robota.
 
-
+![Vypinace](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Pictures/vypinace.jpg "Vypinace robota")
  
-\begin{figure}[H]
-	\begin{center}\includegraphics[scale=0.8]{vypinace.jpg}\end{center}
-	\caption[Robot]{Vypínače}\label{Robot}
-\end{figure}
-\item Pomocou mobilnej aplikácie riadime robota
-\end{enumerate}
+ 2. Pomocou mobilnej aplikácie riadime robota. *Pozn. Info k mobilnej aplikácii v nasledujúcej podkapitole.*
+
+## Návod na obsluhu mobilnej aplikácie
+
+1. Stiahneme si a nainštalujeme aplikáciu __CheetahRobot__.
+Potrebný súbor nájdeme v [git priečinku](https://github.com/markotre/CheetahRobot/tree/develop/Android_app).
+
+2. Po nainštalovaní aplikácie, otvoríme aplikáciu.
+
+![Appka_popis](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Pictures/opisapka.jpg "Opis appka")
+ 
+3. Pripojíme sa pomocou tlačítka bluetooth na robota. Ovládame robota pomocou ponúknutých možností. Po zakliknutí jedného z povelu, tlačítko zmení svoju farbu.  
+
+![Appka3](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Pictures/apka_3.jpg "Opis appka3")
 
 
-
-
-
-\subsection{Návod na obsluhu mobilnej aplikácie}
-\begin{enumerate}
-\item Stiahneme si a nainštalujeme aplikáciu \textbf{CheetahRobot}.
-Potrebný súbor nájdeme v priečinku \path{CheetahRobot\app\build\outputs\apk\debug}.
-\item Po nainštalovaní aplikácie, otvoríme aplikáciu.
-\begin{figure}[H]
-	\begin{center}\includegraphics[scale=0.15]{opisapka.jpg}\end{center}
-	\caption[Robot]{Aplikácia}\label{Robot}
-\end{figure}
-
-\item Pripojíme sa pomocou tlačítka bluetooth na robota. Ovládame robota pomocou ponúknutých možností. Po zakliknutí jedného z povelu, tlačítko zmení svoju farbu.  
-\begin{figure}[H]
-	\begin{center}\includegraphics[scale=0.1]{apka_3.jpg}\end{center}
-	\caption[Robot]{Pripojenie na robota}\label{Robot}
-\end{figure}
-
-
-\end{enumerate}
-
-\subsection{Návod na obsluhu robota} 
-\begin{enumerate}
-\item Zapneme robota pomocou vypínačov na spodnej strane robota
-\begin{figure}[H]
-	\begin{center}\includegraphics[scale=0.8]{vypinace.jpg}\end{center}
-	\caption[Robot]{Vypínače}\label{Robot}
-\end{figure}
-\item Pomocou mobilnej aplikácie riadime robota
-\end{enumerate}
