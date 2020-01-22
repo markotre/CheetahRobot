@@ -12,18 +12,18 @@ pulzno-šírkovou moduláciu (PWM).
 * Mikropočítač STM32F303K8T6
 * 8 micro servo pohonov
 
-![ Micro servo MG90S ](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/servo.jpg "Micro servo MG90S")
+![ Micro servo MG90S ](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Pictures/servo.jpg "Micro servo MG90S")
 
 * HC-06 bluetooth module
 * Napájacie batérie
 * Vytlačené časti konštrukcie robota
 ## Bloková schéma zapojenia
-![Blokova schema zapojenia ](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Block_diagram.png "Blokova schema zapojenia")
+![Blokova schema zapojenia ](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Pictures/Block_diagram.png "Blokova schema zapojenia")
 
 ## Ciele projektu
 * Zostrojiť robota podľa predlohy
 
-![Predloha robota](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/robot.jpg "Predloha robota")
+![Predloha robota](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Pictures/robot.jpg"Predloha robota")
 
 * Vytvoriť mobilnú aplikáciu na ovládanie robota
 ## Literatúra
