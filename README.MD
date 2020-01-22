@@ -8,7 +8,7 @@ meniť pomocou mobilnej android aplikácie cez Bluetooth, pomocou protokolu UART
 tlačiareň. Nohy robota a držiaky na servo pohony vytlačíme podľa predlohy \cite{Predloha}. Servo pohony budeme riadiť
 pulzno-šírkovou moduláciu (PWM).
 
-  ### 1. Ciele projektu
+  ### Ciele projektu
 * __Zostrojiť robota podľa [predlohy](https://www.youtube.com/watch?v=btEk4j-RCMY)__
 * __Vytvoriť mobilnú aplikáciu na ovládanie robota__
 
