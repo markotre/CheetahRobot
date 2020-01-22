@@ -2,7 +2,7 @@
 #ifndef __moves_H
 #define __moves_H
 #ifdef __cplusplus
- extern "C" {
+extern "C" {
 #endif
 
 
@@ -15,16 +15,20 @@
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
- void stand_up(void);
- void push_ups(void);
- void check(void);
- void sit(void);
- void sit_inv(void);
- void lay(void);
- void hello(void);
- void walk(void);
- void sleep(void);
- void back_walk(void);
+void stand_up(void);
+void push_ups(void);
+void check(void);
+void sit(void);
+void sit_inv(void);
+void lay(void);
+void hello(void);
+void walk(void);
+void sleep(void);
+void back_walk(void);
+void left_walk(void);
+void right_walk(void);
+void dance(void);
+
 
 
 /* USER CODE BEGIN Prototypes */
@@ -37,11 +41,11 @@
 #endif
 
 /**
-  * @}
-  */
+ * @}
+ */
 
 /**
-  * @}
-  */
+ * @}
+ */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

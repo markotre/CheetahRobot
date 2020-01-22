@@ -37,8 +37,8 @@ CheetahRobot.list \
 all: CheetahRobot.elf secondary-outputs
 
 # Tool invocations
-CheetahRobot.elf: $(OBJS) $(USER_OBJS) C:\Users\Marek\STM32CubeIDE\workspace_1.0.2\CheetahRobot\STM32F303K8TX_FLASH.ld
-	arm-none-eabi-gcc -o "CheetahRobot.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Marek\STM32CubeIDE\workspace_1.0.2\CheetahRobot\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CheetahRobot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+CheetahRobot.elf: $(OBJS) $(USER_OBJS) C:\Users\Marek\STM32CubeIDE\workspace_1.0.2\CheetahRobot\CheetahRobot_STMProject\STM32F303K8TX_FLASH.ld
+	arm-none-eabi-gcc -o "CheetahRobot.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Marek\STM32CubeIDE\workspace_1.0.2\CheetahRobot\CheetahRobot_STMProject\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CheetahRobot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
