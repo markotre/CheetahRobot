@@ -11,7 +11,7 @@ pulzno-šírkovou moduláciu (PWM).
 ## Potrebné komponenty
 * Mikropočítač STM32F303K8T6
 * 8 micro servo pohonov
-
+![Micro servo MG90S]()
 * HC-06 bluetooth module
 * Napájacie batérie
 * Vytlačené časti konštrukcie robota
