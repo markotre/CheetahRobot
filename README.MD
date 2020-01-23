@@ -5,7 +5,7 @@ __Autori:__ Bc. Eva Štalmachová, Bc. Bálint Sallay, Bc. Alisher Sarsekeyev, B
 Cieľom projektu je zostrojiť a naprogramovať [štvornohého robota](https://www.youtube.com/watch?v=btEk4j-RCMY), ktorého budeme riadiť pomocou mobilnej aplikácie.
 Robot bude mať viacero módov. Bude vedieť chodiť dopredu, dozadu, otočiť sa doprava a doľava atď. Módy budeme môcť
 meniť pomocou mobilnej android aplikácie cez Bluetooth, pomocou protokolu UART. Na konštrukciu robota použijeme 3D
-tlačiareň. Nohy robota a držiaky na servo pohony vytlačíme podľa predlohy \cite{Predloha}. Servo pohony budeme riadiť
+tlačiareň. Nohy robota a držiaky na servo pohony vytlačíme podľa predlohy. Servo pohony budeme riadiť
 pulzno-šírkovou moduláciu (PWM).
 
   ### Ciele projektu
@@ -36,7 +36,7 @@ Na podvozku sa nachádza prototypová doska. Riadiacou jednotkou robota je kit S
 
 ## Záver
 
-Podarilo sa nám zostrojiť robota podľa špecifikácie. Splnili sme všetky ciele zo špecifikácie. Využili sme periférie __UART, GPIO, TIMER__. Pomocou aplikácie dokážeme robota riadiť smerom vpred, vzad a otočiť sa do obidvoch strán. Robot nemá žiadnu spätnú väzbu zo servo pohonov, preto vplyvom nepresnoti servo motorov a zlého umiestnenia ťažiska nedokáže ísť rovno.
+Podarilo sa nám zostrojiť robota podľa špecifikácie. Splnili sme všetky ciele zo špecifikácie. Využili sme periférie __UART, GPIO, TIMER__. Pomocou aplikácie dokážeme robota riadiť smerom vpred, vzad a otočiť sa do obidvoch strán. Robot nemá žiadnu spätnú väzbu zo servo pohonov, preto vplyvom nepresnoti servo motorov a zlého umiestnenia ťažiska nedokáže ísť rovno. Programatorskú a používateľskú príručku nájdete v priečinku [Documentation](https://github.com/markotre/CheetahRobot/tree/develop/Documentation).
 
 ![Vysledok](https://github.com/markotre/CheetahRobot/blob/develop/Pictures/20200119_200212.jpg "Vysledok - robot")
 
