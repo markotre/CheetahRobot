@@ -24,6 +24,9 @@ Na podvozku sa nachádza prototypová doska. Riadiacou jednotkou robota je kit S
 
 ![Proto_doska](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Pictures/protodoska.jpg "Prototypova doska")
 
+#### Schéma zapojenia
+
+![Zapojenie](https://github.com/markotre/CheetahRobot/blob/develop/Documentation/Pictures/Schematic_Cheetah.png "Zapojenie")
 ### Potrebné komponenty
 * Mikropočítač STM32F303K8T6
 * 8 micro servo pohonov
