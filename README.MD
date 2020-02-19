@@ -1,5 +1,5 @@
 # Štvornohý robot
-__Autori:__ Bc. Eva Štalmachová, Bc. Bálint Sallay, Bc. Alisher Sarsekeyev, Bc. Marek Trebuľa,
+__Autori:__ Bc. Eva Štalmachová, Bc. Bálint Sallay, Bc. Alisher Sarsekeyev, Bc. Marek Trebuľa.
  ## Zadanie
 
 Cieľom projektu je zostrojiť a naprogramovať [štvornohého robota](https://www.youtube.com/watch?v=btEk4j-RCMY), ktorého budeme riadiť pomocou mobilnej aplikácie.
